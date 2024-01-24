@@ -7,7 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 @Data
-public class VkiDto extends AuditingAwareBaseDto implements Serializable {
+public class VkiDto extends AuditingAwareBaseDto implements Serializable {//vjdksçk
 
     public static final Long serialVersionUID = 1L;
 
