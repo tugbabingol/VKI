@@ -33,7 +33,7 @@ public class SwaggerOpenApiBeanClass {
                         .version("V1.0")
                         .contact(new Contact()
                                 .name("Hamit")
-                                .url("www.tugbabingol.com.tr")
+                                .url("www.hamitmizrak.com.tr")
                                 .email("hamitmizrak@gmail.com"))
                         .termsOfService(" Software INC.")
                         .license(

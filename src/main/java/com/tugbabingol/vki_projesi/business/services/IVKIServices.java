@@ -1,15 +1,25 @@
 package com.tugbabingol.vki_projesi.business.services;
+
 import java.util.List;
 
 public interface IVKIServices<D,E>{
 
+    // Model Mapper
+    //veritabanından gelen verileri gönderirken özel yani backend e ait
+    //verileri göndermememize yarar. yani maskeler
+
     public D entityToDto(E e);
-
+    //Entity yi Dto ya çevirir.
     public E dtoToEntity(D d);
-    //SPEED DATA
-    public List<D> vkiServiceSpeedData(Long key);
+    //Dto yu Entitiy e çevirir.
 
-    //ALL DELETE
+    ////////////////////////////////////////////////////////////
+
+    // SPEED DATA
+    public List<D> vkiServiceSpeedData(Long key);
+    // Girilen değer kadar otomatik değer oluşturur.
+
+    // ALL DELETE
     public String vkiServiceDeleteAll();
     //FIND ID
     public D vkiServiceFindById(Long id);
@@ -31,6 +41,4 @@ public interface IVKIServices<D,E>{
     // DELETE
     public D vkiServiceDeleteById(Long id);
 
-
-
-}
+} //End Interface IRegisterServicesviceFindByName(String uName);

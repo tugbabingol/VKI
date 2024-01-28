@@ -3,21 +3,21 @@ package com.tugbabingol.vki_projesi.data.entity;
 import com.tugbabingol.vki_projesi.data.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.Serializable;
 
 // LOMBOK
+@EqualsAndHashCode(callSuper = false)
 @Data
 @Log4j2
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+
+
 
 // ENTITY
 @Entity

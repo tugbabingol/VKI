@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Log4j2
 @Builder
 
+
 // REGISTER
 public class RegisterDto extends AuditingAwareBaseDto implements Serializable {
 
@@ -57,6 +58,8 @@ public class RegisterDto extends AuditingAwareBaseDto implements Serializable {
         this.registerPassword = registerPassword;
         this.registerIsPassive = registerIsPassive;
     }
+
+
 
     // toString
     @Override

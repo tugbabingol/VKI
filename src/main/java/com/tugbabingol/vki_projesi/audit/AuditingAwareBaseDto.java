@@ -4,11 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 import java.util.Date;
 
 //LOMBOK
+@SuperBuilder
 @Getter
 @Setter
 
@@ -43,4 +45,6 @@ abstract public class AuditingAwareBaseDto implements Serializable {
     @JsonIgnore
     protected Date lastDate;
 
+    protected AuditingAwareBaseDto() {
+    }
 } //end class

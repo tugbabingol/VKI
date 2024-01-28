@@ -4,18 +4,16 @@ import com.tugbabingol.vki_projesi.data.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.Serializable;
+@EqualsAndHashCode(callSuper = false)
 @Data
-@Log4j2
 @AllArgsConstructor //Clasın içindeki tüm Variable oldupuğu constructor
 @NoArgsConstructor // Boş bir Constructor
-@Builder
+
+
 
 @Entity
 @Table(name = "vki")
